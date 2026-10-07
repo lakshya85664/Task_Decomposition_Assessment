@@ -1,0 +1,54 @@
+{
+  "assessment_task": 1,
+  "title": "Build the task tree",
+  "root_goal": "launch blog",
+  "tree": {
+    "name": "launch blog",
+    "depends_on": [],
+    "children": [
+      {
+        "name": "write posts",
+        "depends_on": [],
+        "children": [
+          {
+            "name": "pick topics",
+            "depends_on": [],
+            "children": []
+          },
+          {
+            "name": "draft",
+            "depends_on": [
+              "pick topics"
+            ],
+            "children": []
+          },
+          {
+            "name": "proofread",
+            "depends_on": [
+              "draft"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "build site",
+        "depends_on": [],
+        "children": [
+          {
+            "name": "choose theme",
+            "depends_on": [],
+            "children": []
+          },
+          {
+            "name": "configure hosting",
+            "depends_on": [
+              "choose theme"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

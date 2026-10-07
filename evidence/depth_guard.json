@@ -1,0 +1,9 @@
+{
+  "assessment_task": 3,
+  "title": "Enforce depth",
+  "test_goal": "loop",
+  "max_depth": 2,
+  "recursion_error_caught": true,
+  "error_message": "maximum decomposition depth 2 exceeded for 'loop'",
+  "safe_stop_verified": true
+}

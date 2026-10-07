@@ -1,0 +1,22 @@
+Topic 8 — Task Decomposition
+============================================================
+
+Recursively decomposed task tree:
+- launch blog
+  - write posts
+    - pick topics
+    - draft (after: pick topics)
+    - proofread (after: draft)
+  - build site
+    - choose theme
+    - configure hosting (after: choose theme)
+
+Atomic leaf tasks:
+- pick topics
+- draft (after: pick topics)
+- proofread (after: draft)
+- choose theme
+- configure hosting (after: choose theme)
+
+Quality check:
+valid=True

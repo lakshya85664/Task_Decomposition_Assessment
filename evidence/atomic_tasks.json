@@ -1,0 +1,33 @@
+{
+  "assessment_task": 4,
+  "title": "Flatten to atomic tasks",
+  "count": 5,
+  "atomic_tasks": [
+    {
+      "name": "pick topics",
+      "depends_on": []
+    },
+    {
+      "name": "draft",
+      "depends_on": [
+        "pick topics"
+      ]
+    },
+    {
+      "name": "proofread",
+      "depends_on": [
+        "draft"
+      ]
+    },
+    {
+      "name": "choose theme",
+      "depends_on": []
+    },
+    {
+      "name": "configure hosting",
+      "depends_on": [
+        "choose theme"
+      ]
+    }
+  ]
+}

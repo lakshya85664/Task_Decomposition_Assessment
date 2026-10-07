@@ -1,0 +1,35 @@
+{
+  "assessment_task": 5,
+  "title": "Check task quality",
+  "cases": {
+    "valid_tree": {
+      "valid": true,
+      "errors": []
+    },
+    "duplicate_sibling": {
+      "valid": false,
+      "errors": [
+        "root: sibling task names must be unique"
+      ]
+    },
+    "unknown_dependency": {
+      "valid": false,
+      "errors": [
+        "root/task-a: unknown dependency 'missing-task'"
+      ]
+    },
+    "self_dependency": {
+      "valid": false,
+      "errors": [
+        "root/task-a: task cannot depend on itself",
+        "root/task-a: task cannot depend on itself"
+      ]
+    },
+    "malformed_child": {
+      "valid": false,
+      "errors": [
+        "root: child 0 must be a Task"
+      ]
+    }
+  }
+}

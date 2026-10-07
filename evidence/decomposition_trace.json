@@ -1,0 +1,96 @@
+{
+  "assessment_task": 2,
+  "title": "Implement decompose()",
+  "root_goal": "launch blog",
+  "rules_used": {
+    "launch blog": [
+      {
+        "task": "write posts",
+        "depends_on": []
+      },
+      {
+        "task": "build site",
+        "depends_on": []
+      }
+    ],
+    "write posts": [
+      {
+        "task": "pick topics",
+        "depends_on": []
+      },
+      {
+        "task": "draft",
+        "depends_on": [
+          "pick topics"
+        ]
+      },
+      {
+        "task": "proofread",
+        "depends_on": [
+          "draft"
+        ]
+      }
+    ],
+    "build site": [
+      {
+        "task": "choose theme",
+        "depends_on": []
+      },
+      {
+        "task": "configure hosting",
+        "depends_on": [
+          "choose theme"
+        ]
+      }
+    ]
+  },
+  "result": {
+    "name": "launch blog",
+    "depends_on": [],
+    "children": [
+      {
+        "name": "write posts",
+        "depends_on": [],
+        "children": [
+          {
+            "name": "pick topics",
+            "depends_on": [],
+            "children": []
+          },
+          {
+            "name": "draft",
+            "depends_on": [
+              "pick topics"
+            ],
+            "children": []
+          },
+          {
+            "name": "proofread",
+            "depends_on": [
+              "draft"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "build site",
+        "depends_on": [],
+        "children": [
+          {
+            "name": "choose theme",
+            "depends_on": [],
+            "children": []
+          },
+          {
+            "name": "configure hosting",
+            "depends_on": [
+              "choose theme"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
